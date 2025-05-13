@@ -22,7 +22,7 @@ jobs:
       - name: setup GPG
         uses: aerospike/shared-workflows/devops/setup-gpg@feat/setup-gpg-composite
         with:
-          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          #gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-key-pass: ${{ secrets.GPG_PASS }}
           gpg-key-name: "phanitest"
       - name: Download DEB & RPM from Release “${{ github.event.inputs.tag }}”
